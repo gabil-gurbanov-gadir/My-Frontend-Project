@@ -36,25 +36,51 @@ $(document).ready(function() {
                         items: 3
                     },
                     1000: {
-                        stagePadding: 100,
+                        stagePadding: 100
                     }
                 }
             });
         };
         $('.timer').countTo();
-        if (screen.width < 992) {
+
+        // $(window).resize(function() {
+        //     if ($(window).width() <= 992) {
+        //         $('#responsiveBtn').click(function(e) {
+        //             e.preventDefault();
+        //             $('#nav .navbar .collapse').toggleClass('show');
+        //         });
+
+        // $('#nav li.nav-item').each(function(elem) {
+        //     $(this).click(function(e) {
+        //         e.preventDefault();
+        //         $(this).children('ul.dropdown-menu').toggleClass('show');
+        //     });
+        // });
+
+        //     } else {
+        // $('#nav li.nav-item').each(function(elem) {
+        //     $(this).on('mouseenter', function(e) {
+        //         $(this).children('ul.dropdown-menu').addClass('show');
+        //     });
+        //     $(this).on('mouseleave', function() {
+        //         $(this).children('ul.dropdown-menu').removeClass('show');
+        //     })
+        // });
+        //     };
+        // });
+
+        var screensize = document.documentElement.clientWidth;
+        if (screensize < 992) {
             $('#responsiveBtn').click(function(e) {
                 e.preventDefault();
                 $('#nav .navbar .collapse').toggleClass('show');
-            })
+            });
             $('#nav li.nav-item').each(function(elem) {
                 $(this).click(function(e) {
-                    e.preventDefault();
-                    console.log($(this).children('ul.dropdown-menu'));
                     $(this).children('ul.dropdown-menu').toggleClass('show');
-
-                })
+                });
             });
+
         } else {
             $('#nav li.nav-item').each(function(elem) {
                 $(this).on('mouseenter', function(e) {
@@ -65,6 +91,9 @@ $(document).ready(function() {
                 })
             });
         };
+
+
+
         wow = new WOW({
             boxClass: 'wow', // default
             animateClass: 'animated', // default
