@@ -9,6 +9,10 @@
     background-color: $bg-gray-color;
 }
 
+.bg-dark {
+    background: #111d30 none repeat scroll 0 0 !important;
+}
+
 .left-border::before {
     position: absolute;
     left: -30px;

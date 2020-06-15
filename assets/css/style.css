@@ -3205,6 +3205,10 @@ input {
   background-color: #f4f7fc;
 }
 
+.bg-dark {
+  background: #111d30 none repeat scroll 0 0 !important;
+}
+
 .left-border::before {
   position: absolute;
   left: -30px;
@@ -3738,7 +3742,7 @@ footer #footer-shape {
   bottom: 0;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  z-index: 1 !important;
   background-repeat: no-repeat;
   background-position: center bottom;
   opacity: 0.05;
@@ -4569,6 +4573,10 @@ footer #footer-shape {
 
 #blog .blog-items .single-item .item .info > a {
   margin-top: 7px;
+}
+
+#footer-shape {
+  z-index: 1 !important;
 }
 
 @media (max-width: 991.98px) {
