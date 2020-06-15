@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    window.addEventListener('load', (event) => {
+    $(window).on('load', (event) => {
         $('#preloader').addClass('d-none');
 
         if ($('#searchBtn').length) {
