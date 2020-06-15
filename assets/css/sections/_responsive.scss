@@ -1,0 +1,251 @@
+@media(max-width: 991.98px) {
+    header {
+        #nav {
+            .navbar {
+                border-bottom: 1px solid #e7e7e7;
+                .responsive-menu {
+                    display: inline-block;
+                    padding: 21px 10px 21px 40px;
+                    font-size: 22px;
+                }
+                .navbar-brand {
+                    &::before {
+                        display: none;
+                    }
+                    .logo-light {
+                        display: none;
+                    }
+                    .logo-responsive {
+                        display: inline-block;
+                    }
+                }
+                .collapse {
+                    display: inline-block;
+                    position: absolute;
+                    top: 91px;
+                    left: 0;
+                    background-color: white;
+                    width: 100%;
+                    visibility: hidden;
+                    height: 0;
+                    opacity: 0;
+                    transition: all 0.35s ease-in-out;
+                    &.show {
+                        height: 365px;
+                        visibility: visible;
+                        transition: all 0.35s ease-in-out;
+                        opacity: 1;
+                    }
+                    .nav-item {
+                        padding: 6px;
+                        border-bottom: 1px solid #e7e7e7;
+                        .nav-link {
+                            padding: 14px 15px;
+                            &.dropdown {
+                                &::after {
+                                    position: absolute;
+                                    right: 60px;
+                                }
+                            }
+                        }
+                        .dropdown-menu {
+                            position: absolute;
+                            width: 100%;
+                        }
+                    }
+                }
+                .action {
+                    min-height: 80px;
+                    padding-left: 10px;
+                    right: 20px;
+                    position: relative;
+                    z-index: 1;
+                    &>div {
+                        &>a {
+                            padding: 25px 10px;
+                            font-size: 20px;
+                            font-weight: 400;
+                        }
+                    }
+                    .extra-info {
+                        .side-menu {
+                            &.on {
+                                right: -100px;
+                            }
+                            .close-btn {
+                                top: -30px;
+                                right: 60px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #banner {
+        .info {
+            .info-content {
+                padding-top: 30px;
+                h2 {
+                    font-size: 36px;
+                    span {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+        .image {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+    #features {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .container {
+            margin-left: auto;
+            padding-right: 15px;
+            padding-left: 15px;
+            .image {
+                margin-bottom: 30px;
+            }
+            .slide {
+                padding-left: 30px!important;
+            }
+            .owl-stage-outer {
+                .owl-stage {
+                    left: 0!important;
+                }
+            }
+        }
+    }
+    #about {
+        .info-buttons {
+            .nav-pills {
+                li {
+                    margin-bottom: 15px!important;
+                    width: 100%;
+                    a {
+                        border: 1px solid #dddddd!important;
+                        &.active {
+                            &::before {
+                                display: none;
+                            }
+                            &::after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #fun-factor {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .fun-fact {
+            margin-bottom: 50px;
+        }
+    }
+    #services {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        &::before {
+            display: none;
+        }
+        .rotating-shape {
+            display: none;
+        }
+        .services-items {
+            .item {
+                text-align: center;
+            }
+        }
+    }
+    #work-process {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .work-process-items {
+            .content {
+                margin-bottom: 50px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+    #skill {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        &::before {
+            display: none;
+        }
+        &::after {
+            display: none;
+        }
+        .skill-image {
+            img:nth-child(2) {
+                right: 0%;
+            }
+        }
+    }
+    #testimonials {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #blog {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #footer-top {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .footer-item {
+            margin-bottom: 50px;
+        }
+    }
+    footer {
+        #footer-bottom {
+            text-align: center;
+            border-top: 1px solid #e7e7e7;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            ul {
+                justify-content: center!important;
+            }
+        }
+    }
+}
+
+@media(min-width: 1024px) {
+    #nav {
+        .navbar {
+            .responsive-menu {
+                display: none;
+            }
+            .navbar-brand {
+                position: relative;
+                z-index: 1;
+                padding: 20px 30px 20px 15px;
+                margin-left: -15px;
+                &::before {
+                    position: absolute;
+                    right: 0;
+                    top: -1px;
+                    content: "";
+                    height: 93px;
+                    width: 500%;
+                    background: $primary-color;
+                    z-index: -1;
+                }
+                .logo-responsive {
+                    display: none;
+                }
+            }
+        }
+    }
+}

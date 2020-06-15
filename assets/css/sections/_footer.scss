@@ -1,0 +1,98 @@
+footer {
+    position: relative;
+    z-index: 1;
+    #footer-top {
+        .footer-item {
+            &>img {
+                margin-bottom: 30px;
+            }
+            &.link {
+                ul {
+                    li {
+                        display: block;
+                        margin-bottom: 18px;
+                        a {
+                            display: inline-block;
+                            color: $text-gray-color;
+                            font-weight: 600;
+                            &:hover {
+                                color: $primary-color;
+                            }
+                        }
+                    }
+                }
+            }
+            .contact-adress {
+                margin-top: 20px;
+                li {
+                    margin-bottom: 10px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .social {
+                margin-top: 25px;
+                li {
+                    display: inline-block;
+                    margin-right: 7px;
+                    margin-bottom: 0;
+                    a {
+                        display: inline-block;
+                        height: 37px;
+                        width: 37px;
+                        line-height: 40px;
+                        text-align: center;
+                        color: #ffffff;
+                        border-radius: 5px;
+                        font-size: 14px;
+                    }
+                    &.facebook a {
+                        background: #3B5998 none repeat scroll 0 0;
+                    }
+                    &.twitter a {
+                        background: #1DA1F2 none repeat scroll 0 0;
+                    }
+                    &.youtube a {
+                        background: #cd201f none repeat scroll 0 0;
+                    }
+                    &.instagram a {
+                        background: #262626 none repeat scroll 0 0;
+                    }
+                }
+            }
+        }
+    }
+    #footer-bottom {
+        padding-bottom: 50px;
+        p {
+            margin: 0;
+            a {
+                color: $primary-color;
+                font-weight: 700;
+                text-decoration: underline;
+            }
+        }
+        ul {
+            li {
+                display: inline-block;
+                margin-left: 15px;
+                a:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    #footer-shape {
+        background-image: url(../img/shape/1.svg);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        opacity: 0.05;
+    }
+}

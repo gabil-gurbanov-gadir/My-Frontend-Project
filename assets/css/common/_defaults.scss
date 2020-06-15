@@ -1,0 +1,106 @@
+.section-default {
+    position: relative;
+    z-index: 1;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.bg-gray {
+    background-color: $bg-gray-color;
+}
+
+.left-border::before {
+    position: absolute;
+    left: -30px;
+    top: -1%;
+    content: "";
+    height: 102%;
+    width: 100px;
+    background: $bg-gray-color;
+    z-index: -1;
+    border-radius: 50px;
+}
+
+.section-title {
+    margin-bottom: 60px;
+    overflow: hidden;
+    margin-top: -5px;
+    h4 {
+        text-transform: uppercase;
+        font-weight: 800;
+        color: $primary-color;
+        font-size: 20px;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        &::after {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            content: "";
+            height: 10px;
+            width: 100%;
+            background: $primary-color;
+            z-index: -1;
+            opacity: 0.1;
+        }
+    }
+    & h2 {
+        display: block;
+        font-weight: 700;
+        position: relative;
+        margin-bottom: 0;
+        font-size: 36px;
+    }
+}
+
+.item-header {
+    h4 {
+        font-weight: 700;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 30px;
+        &::after {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            content: "";
+            height: 10px;
+            width: 100%;
+            background: #f4f7fc;
+            z-index: -1;
+        }
+    }
+}
+
+.rectangular-shape {
+    &::after {
+        position: absolute;
+        right: 0;
+        bottom: 50px;
+        content: "";
+        height: 600px;
+        width: 600px;
+        background: $primary-color;
+        z-index: -1;
+        opacity: 0.08;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        transform: rotate(90deg);
+    }
+}
+
+.circular-shape {
+    &::after {
+        position: absolute;
+        right: 30px;
+        top: 150px;
+        height: 500px;
+        width: 500px;
+        border: 50px solid $primary-color;
+        content: "";
+        z-index: -1;
+        opacity: 0.07;
+        border-radius: 50%;
+    }
+}
